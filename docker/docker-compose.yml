@@ -1,0 +1,19 @@
+version: '2'
+
+services:
+    clojure:
+        build:
+            context: ..
+            dockerfile: ./docker/clojure/Dockerfile
+        volumes:
+            - ./clojure/root_home/.bash_history:/root/.bash_history
+            - ../src/:/usr/src/clojure-in-docker/src/
+            - ../test/:/usr/src/clojure-in-docker/test/
+        stdin_open: true
+        tty: true
+        networks:
+            - backend
+
+networks:
+  backend:
+    driver: "bridge"
