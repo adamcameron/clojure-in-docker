@@ -10,4 +10,7 @@ WORKDIR /usr/src/clojure-in-docker
 
 COPY ./project.clj .
 
+EXPOSE 7888
+
 RUN lein deps
+#RUN ["lein", "repl", ":headless", ":host", "0.0.0.0", ":port", "7888"]

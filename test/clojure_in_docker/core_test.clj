@@ -3,5 +3,5 @@
             [clojure-in-docker.core :refer :all]))
 
 (deftest a-test
-  (testing "FIXME, I fail."
+  (testing "test runner"
     (is (= 1 1))))

@@ -1,7 +1,6 @@
-(ns clojure-in-docker.core
-  (:gen-class))
+(ns clojure-in-docker.core)
 
-(defn -main
-  "I don't do a whole lot ... yet."
-  [& args]
-  (println "Hello, World!"))
+(defn foo
+  "I don't do a whole lot."
+  [x]
+  (println x "Hello, World!"))
