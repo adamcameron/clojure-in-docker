@@ -13,3 +13,8 @@
 (deftest test-greet-by-multiple-name
   (testing "it should return G'day [name] if more than one names are passed"
     (is (= "G'day Zachary" (greet ["Zachary" "Cameron" "Lynch"])))))
+
+(deftest test-main-output
+  (testing "-main should print the greeting to stdout"
+    (is (= "G'day World\n" (with-out-str (-main))))
+    (is (= "G'day Zachary\n" (with-out-str (-main "Zachary"))))))

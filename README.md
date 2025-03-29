@@ -23,7 +23,7 @@ clojure-in-docker.core=>
 ^d # IE: CTRL-D to exit the repl
 
 $ 
-$ docker exec -it clojure-in-docker-clojure-1 lein test
+$ docker exec clojure-in-docker-clojure-1 lein test
 
 lein test clojure-in-docker.core-test
 
